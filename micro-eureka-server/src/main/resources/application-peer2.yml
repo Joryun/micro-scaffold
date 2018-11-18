@@ -5,11 +5,9 @@ server:
   port: 9001
 eureka:
   instance:
-    hostname: peer2
-    prefer-ip-address: true
-    instance-id: ${eureka.instance.hostname}:${server.port}
+    hostname: localhost
+  #    prefer-ip-address: true
+  #    instance-id: ${eureka.instance.hostname}:${server.port}
   client:
-#    register-with-eureka: false
-#    fetch-registry: false
     service-url:
-      default-zone: http://peer1:9000/eureka/
+      defaultZone: http://127.0.0.1:9000/eureka/
