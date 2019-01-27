@@ -1,4 +1,4 @@
-package com.joryun.micro.eureka.server;
+package com.joryun.microconfig;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,10 +7,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ApplicationTests {
+public class MicroConfigApplicationTests {
 
     @Test
     public void contextLoads() {
     }
 
 }
+
