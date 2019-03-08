@@ -6,9 +6,11 @@ server:
 eureka:
   instance:
     hostname: localhost
-  #    prefer-ip-address: true
-  #    instance-id: ${eureka.instance.hostname}:${server.port}
+    # 使用IP形式定义注册中心地址
+    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://127.0.0.1:9001/eureka/
+      defaultZone: http://${eureka.instance.hostname}:9001/eureka/
+#  server:
+#    enable-self-preservation: false
 
