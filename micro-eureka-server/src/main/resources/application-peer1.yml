@@ -1,6 +1,6 @@
 spring:
   application:
-    name: micro-eureka-server
+    name: @pom.artifactId@
 server:
   port: 9000
 eureka:
@@ -11,6 +11,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:9001/eureka/
-#  server:
-#    enable-self-preservation: false
+  server:
+    enable-self-preservation: false
 
